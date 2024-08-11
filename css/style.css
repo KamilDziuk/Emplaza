@@ -260,6 +260,104 @@ padding: 2%;
 
 
   }
+  .imageOffer
+  {
+
+  }
+
+  .imageOfferOne
+  {
+    right: 0% ;
+    left: 20% ;
+    position: relative ;
+    width: 650px;
+    height: 500px;
+    border-radius: 5%;
+    margin-bottom: 3%;
+
+
+
+  }
+
+  .imageOfferTwo
+  {
+    left:40%;
+    position: relative;
+    width: 650px;
+
+    height: 500px;
+    border-radius: 5%;
+    margin-bottom: 3%;
+  }
+
+
+  .imageOfferThree
+  {
+    right: 0% ;
+    left: 20% ;
+    position: relative ;
+    width: 650px;
+    height: 500px;
+    border-radius: 5%;
+    margin-bottom: 3%;
+    
+  }
+
+
+  .textOfferOne
+  {
+    position: relative;
+    transform: translateX(-50%);
+    left: 800px;
+    top: 300px;
+ width: 20%;
+text-align: center;
+  font-size: 25px;
+    color: #ffffff;
+    background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
+    backdrop-filter : blur(15px);
+  padding: 1%;
+  font-weight: 700;
+  z-index: 999;
+  border-radius: 5%;
+  }
+  .textOfferTwo
+  {
+    position: relative;
+    transform: translateX(-50%);
+    right: -650px;
+    top: 300px;
+    font-weight: 700;
+    width: 25%;
+    text-align: center;
+    font-size: 25px;
+    color: #ffffff;
+    background: linear-gradient(90deg, #000000 0%, #00000000 0%,  #00000078 100%);
+    backdrop-filter : blur(15px);
+  padding: 1%;
+  z-index: 999;
+  border-radius: 5%;
+  }
+
+  .textOfferThree
+  {
+    position: relative;
+    transform: translateX(-50%);
+    left: 800px;
+    top: 300px;
+    width: 20%;
+    text-align: center;
+  
+    font-size: 25px;
+    color: #ffffff;
+    background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
+    backdrop-filter : blur(15px);
+  padding: 1%;
+  font-weight: 700;
+  z-index: 999;
+  border-radius: 5%;
+  }
+
 
   .learnAboutInvestmentsButton
   {
@@ -432,11 +530,38 @@ padding: 2%;
   .menuImage:hover
   {
     opacity: 1 !important;
+    width: 52% !important;
+    height: 485px;
   }
   @media screen and (max-width: 425px) {
 
 
+    .imageOfferOne
+    {
+     
+     
+      width:98% !important;
+     
+  
 
+    }
+  
+    .imageOfferTwo
+    {
+  
+      width:98% !important;
+ 
+  
+    }
+  
+  
+    .imageOfferThree
+    {
+    
+  width:98% !important;
+     
+  
+    }
 
 
 
@@ -797,7 +922,6 @@ height: 130px;
     
   @media(max-width:1200px){
 
-    
 
     .logoEM
   {
@@ -870,10 +994,84 @@ height: 130px;
   }
   }
   
+  @media(max-width:1100px){
+
+    .imageOfferTwo
+    {
+      left:25%;
+      position: relative;
+      width: 650px;
+  
+      height: 500px;
+      border-radius: 5%;
+      margin-bottom: 3%;
+    }
+  
+
+  }
 
 
 
     @media(max-width:850px){
+      .imageOfferOne
+      {
+        transform: translateX(-50%);  
+        left: 50%;
+    width:70%;
+        height: 300px;
+    
+
+      }
+    
+      .imageOfferTwo
+      {
+        transform: translateX(-50%);  
+        left: 50%;
+        width:70%;
+        height: 300px;
+    
+      }
+    
+    
+      .imageOfferThree
+      {
+        transform: translateX(-50%);  
+        left: 50%;
+    width:70%;
+        height: 300px;
+    
+      }
+
+
+      .textOfferOne
+      {
+  
+      
+        left: 50%;
+        top: 290px;
+        transform: translateX(-50%);  
+        width: 50%;
+    
+      }
+      .textOfferTwo
+      {
+        position: relative;
+        
+        transform: translateX(-50%);  
+        left: 50%;
+        top: 290px;
+        width: 50%;
+      }
+    
+      .textOfferThree
+      {
+        position: relative;
+  
+        transform: translateX(-50%);  
+        left: 50%;
+        top: 290px;
+        width: 50%;
+      }
 
 
       .menu {
@@ -930,12 +1128,15 @@ left: 10%;
       
       }
 
-      
+    .gallery
+    {
+width: 80% !important;
+    }
 
       .menuImage {
    
- width: 50%;
-   height: auto;
+ width: 70%;
+   height: 80%;
       }
   
 

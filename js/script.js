@@ -27,7 +27,7 @@ let numbers = 0;
 function  gallery(index)
 {
     galleryItem.forEach((item, i) => {
-        item.style.transform = `translateX(${(i - index)* 123}%)`;
+        item.style.transform = `translateX(${(i - index)* 105}%)`;
         item.style.opacity = i  === index ? 1: 0.3;
     });
 
@@ -44,7 +44,7 @@ setInterval( () =>
     numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
     gallery(numbers);
 
-},3000)
+},5000)
 
 
 document.querySelector('.left').addEventListener('click', () => {
@@ -58,3 +58,43 @@ gallery(numbers);
 });
 
 gallery(numbers);
+
+
+
+
+// let imageOfferTwo = document.querySelectorAll('.imageOfferTwo');
+// let imageOfferThree = document.querySelectorAll('.imageOfferThree');
+
+let imagesOffer = 0;
+let imageOfferOne = document.querySelectorAll('.imageOfferOne');
+let imageOfferTwo = document.querySelectorAll('.imageOfferTwo');
+let imageOfferThree = document.querySelectorAll('.imageOfferThree');
+
+
+function sliderImageOffer ()
+
+{
+  
+for(let i = 0; i < imageOfferOne.length; i ++)
+    
+    {
+        imageOfferOne[i].style.display = "none";
+        imageOfferTwo[i].style.display = "none";
+        imageOfferThree[i].style.display = "none";
+}
+
+imagesOffer++
+
+if(imagesOffer > imageOfferOne.length)
+{
+    imagesOffer =  1;
+}
+
+imageOfferOne[imagesOffer - 1].style.display = "block";
+imageOfferTwo[imagesOffer - 1].style.display = "block";
+imageOfferThree[imagesOffer - 1].style.display = "block";
+
+setTimeout(sliderImageOffer, 2500)
+}
+
+sliderImageOffer();
