@@ -44,7 +44,7 @@ setInterval( () =>
     numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
     gallery(numbers);
 
-},5000)
+},3000)
 
 
 document.querySelector('.left').addEventListener('click', () => {
@@ -65,36 +65,36 @@ gallery(numbers);
 // let imageOfferTwo = document.querySelectorAll('.imageOfferTwo');
 // let imageOfferThree = document.querySelectorAll('.imageOfferThree');
 
-let imagesOffer = 0;
-let imageOfferOne = document.querySelectorAll('.imageOfferOne');
-let imageOfferTwo = document.querySelectorAll('.imageOfferTwo');
-let imageOfferThree = document.querySelectorAll('.imageOfferThree');
+// let imagesOffer = 0;
+// let imageOfferOne = document.querySelectorAll('.imageOfferOne');
+// let imageOfferTwo = document.querySelectorAll('.imageOfferTwo');
+// let imageOfferThree = document.querySelectorAll('.imageOfferThree');
 
 
-function sliderImageOffer ()
+// function sliderImageOffer ()
 
-{
+// {
   
-for(let i = 0; i < imageOfferOne.length; i ++)
+// for(let i = 0; i < imageOfferOne.length; i ++)
     
-    {
-        imageOfferOne[i].style.display = "none";
-        imageOfferTwo[i].style.display = "none";
-        imageOfferThree[i].style.display = "none";
-}
+//     {
+//         imageOfferOne[i].style.display = "none";
+//         imageOfferTwo[i].style.display = "none";
+//         imageOfferThree[i].style.display = "none";
+// }
 
-imagesOffer++
+// imagesOffer++
 
-if(imagesOffer > imageOfferOne.length)
-{
-    imagesOffer =  1;
-}
+// if(imagesOffer > imageOfferOne.length)
+// {
+//     imagesOffer =  1;
+// }
 
-imageOfferOne[imagesOffer - 1].style.display = "block";
-imageOfferTwo[imagesOffer - 1].style.display = "block";
-imageOfferThree[imagesOffer - 1].style.display = "block";
+// imageOfferOne[imagesOffer - 1].style.display = "block";
+// imageOfferTwo[imagesOffer - 1].style.display = "block";
+// imageOfferThree[imagesOffer - 1].style.display = "block";
 
-setTimeout(sliderImageOffer, 2500)
-}
+// setTimeout(sliderImageOffer, 2500)
+// }
 
-sliderImageOffer();
+// sliderImageOffer();

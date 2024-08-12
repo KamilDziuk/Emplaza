@@ -523,15 +523,14 @@ text-align: center;
     position: absolute;
     width: 50%;
     height: 480px;
-    border-radius: 5%;
+ 
     transition: transform 3s ease, opacity 0.3s ease;
   }
 
   .menuImage:hover
   {
     opacity: 1 !important;
-    width: 52% !important;
-    height: 485px;
+  
   }
   @media screen and (max-width: 425px) {
 
@@ -854,7 +853,7 @@ text-align: center;
   align-items    : center;
   gap            : 35px;
   margin-top: -70px;
-  left: 50%;
+  left: 47%;
   transform: translateX(0%);
   font-size: 17px;
   }
@@ -1130,13 +1129,13 @@ left: 10%;
 
     .gallery
     {
-width: 80% !important;
+width: 100% !important;
     }
 
       .menuImage {
    
- width: 70%;
-   height: 80%;
+ width: 75%;
+   height:100%;
       }
   
 
