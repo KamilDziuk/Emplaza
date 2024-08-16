@@ -91,21 +91,12 @@ body {
   
   
   /* heder */
-  @keyframes zoomIn {
-    from {
-      transform: scale(1);
-    }
-  
-    to {
-      transform: scale(1.05);
-    }
-  }
 
 .headerImage
 {
   position: relative;
 
-  width: 350px!important;
+  width:550px!important;
   height: auto !important;
 
 }
@@ -113,14 +104,14 @@ body {
 
   header {
   
-     height: 650px;
+     height: 600px;
       max-width: 100%;
       background: url(/image/mainImage.webp) center; 
       background-size: cover;
-      background-attachment: fixed;
+      background-attachment:inheri;
       display: flex;
       flex-direction: column;
-      animation: zoomIn 7s linear forwards;
+
   
   /*
     NAV
@@ -241,7 +232,7 @@ body {
   text-transform: uppercase;
   margin-top: 15px;
   font-size: 30px;
-  font-weight: bold;
+font-weight: 200;
   letter-spacing: 3px;
   
   }
@@ -250,114 +241,25 @@ body {
   transform: scale(1);
   opacity: 1;
   }
-  .textAbout-us,.textOffer
+  .textAbout-us
 
   {
     color: #fff;
-  background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
+  background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 120%);
 padding: 2%;
 
 
 
   }
-  .imageOffer
+
+  .textOffer
   {
-
-  }
-
-  .imageOfferOne
-  {
-    right: 0% ;
-    left: 20% ;
-    position: relative ;
-    width: 650px;
-    height: 500px;
-    border-radius: 5%;
-    margin-bottom: 3%;
-
-
-
-  }
-
-  .imageOfferTwo
-  {
-    left:40%;
-    position: relative;
-    width: 650px;
-
-    height: 500px;
-    border-radius: 5%;
-    margin-bottom: 3%;
-  }
-
-
-  .imageOfferThree
-  {
-    right: 0% ;
-    left: 20% ;
-    position: relative ;
-    width: 650px;
-    height: 500px;
-    border-radius: 5%;
-    margin-bottom: 3%;
-    
-  }
-
-
-  .textOfferOne
-  {
-    position: relative;
-    transform: translateX(-50%);
-    left: 800px;
-    top: 300px;
- width: 20%;
-text-align: center;
-  font-size: 25px;
-    color: #ffffff;
-    background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
-    backdrop-filter : blur(15px);
-  padding: 1%;
-  font-weight: 700;
-  z-index: 999;
-  border-radius: 5%;
-  }
-  .textOfferTwo
-  {
-    position: relative;
-    transform: translateX(-50%);
-    right: -650px;
-    top: 300px;
-    font-weight: 700;
-    width: 25%;
-    text-align: center;
-    font-size: 25px;
-    color: #ffffff;
-    background: linear-gradient(90deg, #000000 0%, #00000000 0%,  #00000078 100%);
-    backdrop-filter : blur(15px);
-  padding: 1%;
-  z-index: 999;
-  border-radius: 5%;
-  }
-
-  .textOfferThree
-  {
-    position: relative;
-    transform: translateX(-50%);
-    left: 800px;
-    top: 300px;
-    width: 20%;
-    text-align: center;
+    color: #fff;
+    background: linear-gradient(90deg, #000000 0%, #00000000 0%,  #00000078 120%);
+  padding: 2%;
   
-    font-size: 25px;
-    color: #ffffff;
-    background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
-    backdrop-filter : blur(15px);
-  padding: 1%;
-  font-weight: 700;
-  z-index: 999;
-  border-radius: 5%;
   }
-
+  
 
   .learnAboutInvestmentsButton
   {
@@ -451,11 +353,7 @@ text-align: center;
   /*
   MENU SECTION
   */
-  .menu {
-  padding: 30px;
-  font-size: 17px;
-  width: 90% !important;
-  }
+
   .menu-images {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -479,104 +377,6 @@ text-align: center;
   }
   
 
-.imageOffer
-{
-
-}
-
-.imageOfferOne
-{
-  right: 0% ;
-  left: 20% ;
-  position: relative ;
-  width: 650px;
-  height: 500px;
-  border-radius: 5%;
-  margin-bottom: 3%;
-
-
-
-}
-
-.imageOfferTwo
-{
-  left:40%;
-  position: relative;
-  width: 650px;
-
-  height: 500px;
-  border-radius: 5%;
-  margin-bottom: 3%;
-}
-
-
-.imageOfferThree
-{
-  right: 0% ;
-  left: 20% ;
-  position: relative ;
-  width: 650px;
-  height: 500px;
-  border-radius: 5%;
-  margin-bottom: 3%;
-
-}
-
-
-.textOfferOne
-{
-  position: relative;
-  transform: translateX(-50%);
-  left: 800px;
-  top: 300px;
-width: 20%;
-text-align: center;
-font-size: 25px;
-  color: #ffffff;
-  background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
-  backdrop-filter : blur(15px);
-padding: 1%;
-font-weight: 700;
-z-index: 999;
-border-radius: 5%;
-}
-.textOfferTwo
-{
-  position: relative;
-  transform: translateX(-50%);
-  right: -650px;
-  top: 300px;
-  font-weight: 700;
-  width: 25%;
-  text-align: center;
-  font-size: 25px;
-  color: #ffffff;
-  background: linear-gradient(90deg, #000000 0%, #00000000 0%,  #00000078 100%);
-  backdrop-filter : blur(15px);
-padding: 1%;
-z-index: 999;
-border-radius: 5%;
-}
-
-.textOfferThree
-{
-  position: relative;
-  transform: translateX(-50%);
-  left: 800px;
-  top: 300px;
-  width: 20%;
-  text-align: center;
-
-  font-size: 25px;
-  color: #ffffff;
-  background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 100%);
-  backdrop-filter : blur(15px);
-padding: 1%;
-font-weight: 700;
-z-index: 999;
-border-radius: 5%;
-}
-
   
   
   /*
@@ -590,7 +390,7 @@ border-radius: 5%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width:100%;
     text-align: center;
     margin: 20px 0;
   }
@@ -907,8 +707,8 @@ border-radius: 5%;
   }
   
   .nav_headar:hover{
-  background-color: rgba(0, 0, 0, 0.418);
-  
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter : blur(0px);
   }
   
   .nav_headar.sticky{
@@ -927,7 +727,7 @@ border-radius: 5%;
   }
     
   .container{
-  width : 90%;
+  width :100%;
   margin: auto;
   
   }
@@ -951,9 +751,10 @@ border-radius: 5%;
   align-items    : center;
   gap            : 35px;
   margin-top: -70px;
-  left: 47%;
-  transform: translateX(0%);
+  left: 50%;
+  transform: translateX(-15%);
   font-size: 17px;
+ 
   }
     
   .nav-link{
@@ -1025,7 +826,7 @@ height: 130px;
   
   
   position: absolute;
-  margin-top: -70px;
+  margin-top: -55px;
   
   
     max-width: 150px;
@@ -1040,7 +841,8 @@ height: 130px;
   .hamburger{
   display: block;
   position: relative;
-  margin-top: -30px;
+  margin-top: -5px;
+
   z-index: 999;
   
   }
@@ -1062,29 +864,28 @@ height: 130px;
       position        : fixed;
       left            : -100%;
       top             : 150px;
-      gap             : 0;
+      gap             : 13px;
+      padding-bottom            : 1%;
+      padding-top            : 1%;
       flex-direction  : column;
       background-color: #000000d5;
       width           : 100%;
       text-align      : center;
       transition      : 0.3s;
       backdrop-filter : blur(15px) !important; 
-      z-index:999;
+      z-index:999px;
     }
     
     .fa-phone, .fa-envelope-o
     {
       position: relative;
       display: flex;
-      left: 80%;
+      left: 78%;
       transform: translateX(-50%);
     
     top: 5px; 
     }
-  .nav-item{
-  margin: 9px 0;
-  
-  }
+
     
   .nav-menu.active{
   left: 0;

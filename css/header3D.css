@@ -1,0 +1,84 @@
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+
+.header3D
+{
+
+
+font-size: 3rem;
+font-weight: bold;
+background: hsla(221, 44%, 7%, 0);
+padding: 2rem;
+
+position: relative;
+transform-style: preserve-3d;
+transform: 
+perspective(5000px)
+
+rotateY(var(--rotateY))
+rotateX(var(--rotateX))
+
+}
+
+.selector
+{
+color: var(--selector);
+}
+
+.property
+{
+    color: var(--property);
+}
+
+.punctuation
+{
+    color: var(--punctuation);
+}
+.property + .punctuation
+{
+    color: var(--property);
+}
+
+
+.header3D::before,
+.header3D::after
+{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+
+/* gradient thingy */
+.header3D::after
+{
+    inset: -1rem;
+     background: rgba(0, 0, 0, 0);
+     transform: translateZ(-50px);
+     /* backdrop-filter : blur(6px); */
+}
+
+/* .header3D::before
+{
+    inset: 0.75rem;
+    background: rgba(0, 0, 0, 0.465);
+     transform: translateZ(120px);
+     filter: blur(15px);
+     opacity: 0.5;
+
+} */
+@media(max-width:600px){
+    .header3D
+    {
+top: 20%;
+    }    
+
+
+
+}
