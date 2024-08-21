@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "ProximaNova-Light";
+  src: url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.eot");
+  src: url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.svg#ProximaNova-Light")format("svg");
+}
+@import url(https://db.onlinewebfonts.com/c/90b3680786db32f9b5c112d1537677db?family=ProximaNova-Light);
 *
 { 
     margin: 0;
@@ -8,8 +18,8 @@
 
 
 body {
-  
-  font-family: 'Open Sans', sans-serif;
+  font-family: "ProximaNova-Light";
+
     background: #343434;
     color: #fff;
     z-index: 94;
@@ -32,6 +42,19 @@ body {
       }
   }
   
+
+#map
+{
+  position: relative;
+display: flex;
+border-radius: 5%;
+  width: 160px;
+  height: 80px;
+ 
+}
+
+
+
   .phone, .email
   {
     animation: pulse 2s infinite;
@@ -111,7 +134,7 @@ body {
       background-attachment:inheri;
       display: flex;
       flex-direction: column;
-
+      font-family: "ProximaNova-Light";
   
   /*
     NAV
@@ -230,30 +253,42 @@ body {
   }
   header .center p {
   text-transform: uppercase;
+  letter-spacing: 3px;
   margin-top: 15px;
   font-size: 30px;
 font-weight: 200;
-  letter-spacing: 3px;
-  
+
+
   }
   
   nav div.show {
   transform: scale(1);
   opacity: 1;
   }
+
   .textAbout-us
 
   {
+    font-family: "ProximaNova-Light";
+  font-size: 20px;
+    text-align: left;
+    display: flex;
     color: #fff;
   background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 120%);
 padding: 2%;
 
 
 
+
   }
+
+  
 
   .textOffer
   {
+    font-family: "ProximaNova-Light";
+    font-size: 20px;
+    text-align: left;
     color: #fff;
     background: linear-gradient(90deg, #000000 0%, #00000000 0%,  #00000078 120%);
   padding: 2%;
@@ -274,7 +309,7 @@ padding: 2%;
     color:#020000;
     font-size: 20px !important;
     cursor:pointer;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "ProximaNova-Light";
     border-radius:5px
   }
   
@@ -376,6 +411,28 @@ padding: 2%;
   
   }
   
+  .welcomElogoEM
+  {
+   
+    margin-top: -80px;
+    left: 1%;
+      max-width: 270px;
+      max-height: 270px;
+      z-index: 999;
+  }
+
+  .welcome
+  {
+   
+    position: relative;
+    width: 40%;
+    padding-right: 30px;
+     margin-top: -10px;
+    text-align: center;
+    font-size: 50px;
+    font-family: "ProximaNova-Light";
+  }
+
 
   
   
@@ -432,7 +489,13 @@ padding: 2%;
   }
   @media screen and (max-width: 425px) {
 
-
+    header .center p {
+      text-transform: none;
+      letter-spacing: 1px;
+   
+     
+    
+      }
     .imageOfferOne
     {
      
@@ -798,25 +861,34 @@ padding: 2%;
   color          : black;
   text-decoration: none;
   }
-  footer
-{
-position: relative;
-display: flex;
-margin-top: 10%;
-background-color: rgba(0, 0, 0, 0.418);
+  footer {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-family: "ProximaNova-Light";
+    background-color: rgba(0, 0, 0, 0.418);
 backdrop-filter : blur(15px);
-height: 130px;
-}
+  }
 
-.textContact,.textLocation, .textInformation
-{
-  position: relative;
-  margin-left:  1.5%;
-  margin-right: 1.5%;
-  margin-top: 2%;
-  left: 26%;
 
-}
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+  }
+
+  .textLocation, .textContact, .textInformation {
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
     
   @media(max-width:1200px){
 
@@ -977,45 +1049,81 @@ height: 130px;
         width: 100% !important;
         }
 
-.textContact,.textLocation, .textInformation
-{
-
-left: 10%;
-
-}
 
     }
 
     @media(max-width:800px){
 
-
-
-      footer
+      #map
       {
-      position: relative;
-      display:block;
-      bottom: 0;
-      background-color: rgba(0, 0, 0, 0.418);
-      backdrop-filter : blur(15px);
-      height: 230px;
-      padding-top: 2%;
-      padding-bottom: 2%;
-      }      
+       left: 50%;
+       transform: translateX(-50%);
+      }
 
-   .textContact,.textLocation, .textInformation
-{
- position: relative;
- margin-left:  1.5%;
- margin-right: 1.5%;
- margin-top: 2%;
+      footer {
+        display:block;
+        justify-content: center;
+        align-items: center;
  
- left:0%;
+      }
+    
+      .footerContainer {
+        display:block;
+       
+        align-items: center;
+        width: 100%;
+      }
+    
+      .textLocation, .textContact, .textInformation {
+     
+        margin-top: 15px;
+        margin-bottom: 15px;
+       
+      }
+        
 
-}
+
+
    }
     @media(max-width:600px){
   
+      .welcomElogoEM
+      {
+  position: absolute;
+ width: 150px;
+ height: auto;
+ 
+margin-left:71px;
+margin-top: -48px;
+      }
+    
+      .welcome
+      {
+        font-family: "ProximaNova-Light";
+        position: relative;
+ width: 100%;
+ margin-top: 0px;
+ margin-bottom: 5px;
+        text-align: left;
+        font-size: 17px;
+        font-weight: 600;
 
+      }
+    
+    
+      .textAbout-us
+    
+      {
+        font-family: "ProximaNova-Light";
+        text-align: left;
+        display:block;
+        color: #fff;
+      background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #00000078 120%);
+    padding: 2%;
+    
+    
+    
+      }
 
       .headerImage
       {
