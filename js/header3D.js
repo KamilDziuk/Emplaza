@@ -25,3 +25,33 @@ element.style.setProperty("--rotateX", -1 * offsetX + "deg");
 element.style.setProperty("--rotateY",offsetY + "deg");
 
 };
+
+
+
+// const footerlogoEM = document.querySelector(".test3D");
+
+
+// document.addEventListener("mousemove", (e) => {
+//     rotateElement(e, footerlogoEM)
+// });
+
+// function rotateElement(event, element)
+// {
+// //get mouse position
+// const x = event.clientY;
+// const y = event.clientX;
+
+// // find the middle
+// const middleX = window.innerWidth / 2;
+// const middleY = window.innerHeight / 2;
+
+
+
+// //get offset form middle
+// const offsetX = ((x - middleX) / middleX ) * 20;
+// const offsetY = ((y - middleY) / middleY )* 20;
+
+// element.style.setProperty("--rotateX", -1 * offsetX + "deg");
+// element.style.setProperty("--rotateY",offsetY + "deg");
+
+// };

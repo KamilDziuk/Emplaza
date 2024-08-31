@@ -1,99 +1,95 @@
+let hamburger=document.querySelector(".hamburger"),navMenu=document.querySelector(".nav-menu");
 
-let hamburger = document.querySelector(".hamburger"); 
-let navMenu = document.querySelector(".nav-menu");  
+hamburger.addEventListener("click",()=>{
+hamburger.classList.toggle("active"),navMenu.classList.toggle("active")})
+,document.querySelectorAll(".nav-link").forEach(e=>e.addEventListener("click",()=>{hamburger.classList.remove("active"),navMenu.classList.remove("active")})),
+window.addEventListener("scroll",()=>{document.querySelector(".nav_headar").classList.toggle("sticky",window.scrollY>0)});
 
-hamburger.addEventListener("click", () =>
-{
-hamburger.classList.toggle("active");
-navMenu.classList.toggle("active");
+
+
+
+let galleryItem=document.querySelectorAll(".menuImage");
+numbers = 0;
+function gallery(e){
+    galleryItem.forEach((r,l)=>{
+        r.style.transform =`translateX(${(l-e)*102}%)`;
+    
+    
+    
+    
+    
+    }
+
+        
+    
+    )}
+// setInterval(()=>{gallery(numbers=numbers<galleryItem.length-1?numbers+1:0)},5e3),
+document.querySelector(".left").addEventListener("click",()=>{gallery(numbers=numbers<galleryItem.length-1?numbers+1:0)}),
+document.querySelector(".right").addEventListener("click",()=>{gallery(numbers=numbers>0?numbers-1:galleryItem.length-1)}),
+gallery(numbers);
+
+
+let header = document.querySelector("header");
+
+
+header.addEventListener("mousemove", (e) => {
+
+let x = e.clientX;
+let y = e.clientY;
+
+
+
+header.style.transformOrigin =  `${x}px ${y}px`;
+header.style.transform = "scale(1.010)";
 })
 
-document.querySelectorAll(".nav-link").forEach(n =>n.addEventListener("click", () =>
-{
-hamburger.classList.remove("active");
-navMenu.classList.remove("active");
-}));
-
-window.addEventListener("scroll", () =>
-{
-let nav_headar = document.querySelector(".nav_headar");
-nav_headar.classList.toggle("sticky", window.scrollY > 0);
-});
 
 
-let galleryItem = document.querySelectorAll('.menuImage');
-let numbers = 0;
+const panoramas = [
+    {id: 'image0', file: 'image/image360One.webp', autoLoad: true},
+    {id: 'image1', file: 'image/image360Two.webp'},
+    {id: 'image3', file: 'image/image360Three.webp'},
+    {id: 'image4', file: 'image/image360Four.webp'},
+    {id: 'image5', file: 'image/image360Five.webp'},
+    {id: 'image6', file: 'image/image360Six.webp'},
+    {id: 'image7', file: 'image/image360Seven.webp'}
+];
 
-function  gallery(index)
-{
-    galleryItem.forEach((item, i) => {
-        item.style.transform = `translateX(${(i - index)* 105}%)`;
-        item.style.opacity = i  === index ? 1: 0.3;
+panoramas.forEach(panorama => {
+    pannellum.viewer(panorama.id, {
+        "type": "equirectangular",
+        "panorama": panorama.file,
+        "autoLoad": panorama.autoLoad || false,
+        "autoRotate": -2,
+        "showFullscreenCtrl": true,
+        "showControls":true
+        
     });
-
-    
-};
-
-
-
-
-
-
-setInterval( () =>
-{
-    numbers = (numbers < galleryItem.length -1) ?  numbers +1:0;
-    gallery(numbers);
-
-},3000)
-
-
-document.querySelector('.left').addEventListener('click', () => {
-numbers = (numbers < galleryItem.length - 1)? numbers + 1: 0;
-gallery(numbers);
 });
 
-document.querySelector('.right').addEventListener('click', () => {
-numbers = (numbers > 0) ? numbers -1: galleryItem.length -1;
-gallery(numbers);
+
+
+
+
+
+let test = document.querySelectorAll(".pnlm-load-button");
+
+test.forEach(element => {
+    element.innerHTML = ` Kliknij aby zobaczyć interaktywne wizualizacje 360°`
 });
 
-gallery(numbers);
+
+let image0 = document.querySelectorAll(".pnlm-load-box");
+
+image0.forEach(element1 => {
+    element1.innerHTML = `Ładowanie`
+});
 
 
 
 
+// let test9 = document.querySelectorAll(".");
 
-
-// let imagesOffer = 0;
-// let imageOfferOne = document.querySelectorAll('.imageOfferOne');
-// let imageOfferTwo = document.querySelectorAll('.imageOfferTwo');
-// let imageOfferThree = document.querySelectorAll('.imageOfferThree');
-
-
-// function sliderImageOffer ()
-
-// {
-  
-// for(let i = 0; i < imageOfferOne.length; i ++)
-    
-//     {
-//         imageOfferOne[i].style.display = "none";
-//         imageOfferTwo[i].style.display = "none";
-//         imageOfferThree[i].style.display = "none";
-// }
-
-// imagesOffer++
-
-// if(imagesOffer > imageOfferOne.length)
-// {
-//     imagesOffer =  1;
-// }
-
-// imageOfferOne[imagesOffer - 1].style.display = "block";
-// imageOfferTwo[imagesOffer - 1].style.display = "block";
-// imageOfferThree[imagesOffer - 1].style.display = "block";
-
-// setTimeout(sliderImageOffer, 2500)
-// }
-
-// sliderImageOffer();
+// test9.forEach(er => {
+//     er.style.display = "none";
+// });
