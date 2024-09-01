@@ -73,7 +73,6 @@ padding: 0;
 margin: 0;
 }
 
-
 .phone, .email
 {
   animation: pulse 2s infinite;
@@ -83,6 +82,8 @@ margin: 0;
 {
   color: #d0d0d0;
 }
+
+/* Font Awesome  start*/
 .fa-phone, .fa-envelope-o
 {
   position: relative;
@@ -104,6 +105,8 @@ margin-top: -3px;
 {
   color: #d0d0d0;
 }
+
+/* Font Awesome  end*/
 
 
 .textAbout-us,.textOffer
@@ -130,7 +133,7 @@ padding: 2%;
 
 
 
-/* heder  start*/
+/* heder nad nav bar start */
 header {
 
    height: 600px;
@@ -143,6 +146,7 @@ header {
     font-family: "ProximaNova-Light";
     overflow: hidden;
     margin-bottom: -21px;
+
 }
 
 .logoEM {
@@ -235,6 +239,7 @@ line-height: 0;
 margin: auto;
 text-align: center;
 color: white;
+
 }
 header .center h1 {
 
@@ -281,6 +286,10 @@ margin-top: 15px;
 font-size: 30px;
 font-weight: 200;
 
+header, .bread-background, .cake-background {
+  background-attachment: scroll;
+}
+
 
 
 
@@ -291,7 +300,6 @@ margin: auto;
 
 }
 
-/* Nav bar  start*/
 
 nav div.show {
 transform: scale(1);
@@ -371,14 +379,9 @@ color: rgb(126, 126, 126);
 
 
 
-/* Nav bar  end*/
 
 
-/* Hamburger start*/ 
-header, .bread-background, .cake-background {
-  background-attachment: scroll;
-}
-/* heder */
+
 
 
 
@@ -437,155 +440,154 @@ opacity: 0;
 
 
 .nav_headar{
-background-color: #000000b9;
-backdrop-filter : blur(15px);
-position        : fixed;
-top             : 0;
-left            : 0;
-width           : 100%;
-height          : 80px;
-display         : flex;
-justify-content : space-between;
-align-items     : center;
-transition      : 0.6s;
-z-index: 9999;
-}
-
-.nav_headar:hover{
-background-color: rgba(0, 0, 0, 0);
-backdrop-filter : blur(0px);
-}
-
-.nav_headar.sticky{
-background-color: #000000b9;
-backdrop-filter : blur(15px);
-padding         : 0px 0px;
-}
-
-li{
-list-style: none;
-}
+  background-color: #000000b9;
+  backdrop-filter : blur(15px);
+  position        : fixed;
+  top             : 0;
+  left            : 0;
+  width           : 100%;
+  height          : 80px;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  transition      : 0.6s;
+  z-index: 9999;
+  }
   
-a{
-color          : white;
-text-decoration: none;
-}
+  .nav_headar:hover{
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter : blur(0px);
+  }
   
-.container{
-width :100%;
-margin: auto;
-
-}
-
-.navbar{
-min-height     : 70px;
-display        : flex;
-justify-content: space-between;
-align-items    : center;
-
-
-}
+  .nav_headar.sticky{
+  background-color: #000000b9;
+  backdrop-filter : blur(15px);
+  padding         : 0px 0px;
+  }
   
-.nav-logo{
-font-size: 2rem;
-}
-  
-.nav-menu{
-display        : flex;
-justify-content: space-between;
-align-items    : center;
-gap            : 35px;
-margin-top: -70px;
-left: 50%;
-transform: translateX(-15%);
-font-size: 17px;
-
-}
-  
-.nav-link{
-transition: 0.3s ease-out;
-}
-  
-.nav-link:hover{
-color: rgb(126, 126, 126);
-}
-  
-.hamburger{
-display: none;
-cursor : pointer;
-}
-  
-.bar{
-display           : block;
-width             : 25px;
-height            : 3px;
-margin            : 5px auto;
--webkit-transition: all 0.3s ease;
-transition        : all 0.3s ease;
-background-color  : white;
-
-}
-  
-.link:hover{
-color: rgb(126, 126, 126);
-}
-  
-.dropdown.active > .link{
-color: white;
-}
-  
-.dropdown{
-position: relative;
-
-}
+  li{
+  list-style: none;
+  }
     
-.dropdown-menu a{
-color          : black;
-text-decoration: none;
-}
-
-.hamburger{
-display: none;
-cursor : pointer;
-}
-  
-.bar{
-display           : block;
-width             : 25px;
-height            : 3px;
-margin            : 5px auto;
--webkit-transition: all 0.3s ease;
-transition        : all 0.3s ease;
-background-color  : white;
-
-}
-  
-.link:hover{
-color: rgb(126, 126, 126);
-}
-  
-.dropdown.active > .link{
-color: white;
-}
-  
-.dropdown{
-position: relative;
-
-}
+  a{
+  color          : white;
+  text-decoration: none;
+  }
     
-.dropdown-menu a{
-color          : black;
-text-decoration: none;
-}
+  .container{
+  width :100%;
+  margin: auto;
+  
+  }
+  
+  .navbar{
+  min-height     : 70px;
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  
+  
+  }
+    
+  .nav-logo{
+  font-size: 2rem;
+  }
+    
+  .nav-menu{
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  gap            : 35px;
+  margin-top: -70px;
+  left: 50%;
+  transform: translateX(-15%);
+  font-size: 17px;
+  
+  }
+    
+  .nav-link{
+  transition: 0.3s ease-out;
+  }
+    
+  .nav-link:hover{
+  color: rgb(126, 126, 126);
+  }
+    
+  .hamburger{
+  display: none;
+  cursor : pointer;
+  }
+    
+  .bar{
+  display           : block;
+  width             : 25px;
+  height            : 3px;
+  margin            : 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition        : all 0.3s ease;
+  background-color  : white;
+  
+  }
+    
+  .link:hover{
+  color: rgb(126, 126, 126);
+  }
+    
+  .dropdown.active > .link{
+  color: white;
+  }
+    
+  .dropdown{
+  position: relative;
+  
+  }
+      
+  .dropdown-menu a{
+  color          : black;
+  text-decoration: none;
+  }
+  
+  .hamburger{
+  display: none;
+  cursor : pointer;
+  }
+    
+  .bar{
+  display           : block;
+  width             : 25px;
+  height            : 3px;
+  margin            : 5px auto;
+  -webkit-transition: all 0.3s ease;
+  transition        : all 0.3s ease;
+  background-color  : white;
+  
+  }
+    
+  .link:hover{
+  color: rgb(126, 126, 126);
+  }
+    
+  .dropdown.active > .link{
+  color: white;
+  }
+    
+  .dropdown{
+  position: relative;
+  
+  }
+      
+  .dropdown-menu a{
+  color          : black;
+  text-decoration: none;
+  }
+  
+  
 
-/* Hamburger en */
 
 
 
 
-
-/* heder  end*/
-
+/* heder nad nav bar end */
 
 
 /* center  start*/

@@ -1,97 +1,62 @@
-
-
-@font-face {
-	font-family: "ProximaNova-Light";
-	src: url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.eot");
-	src: url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.eot?#iefix")format("embedded-opentype"),
-	url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.woff2")format("woff2"),
-	url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.woff")format("woff"),
-	url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.ttf")format("truetype"),
-	url("https://db.onlinewebfonts.com/t/90b3680786db32f9b5c112d1537677db.svg#ProximaNova-Light")format("svg");
-  }
-  @import url(https://db.onlinewebfonts.com/c/90b3680786db32f9b5c112d1537677db?family=ProximaNova-Light);
-
-
-.footerContender{
-	
-	background: linear-gradient(-90deg, #000000 0%, #00000000 0%,  #000000b9 120%);
-
+.footerContainer {
+	background: linear-gradient(-90deg, #000000 0%, #00000000 0%, #000000b9 120%);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-
-	padding-top: 90px;
-	padding-bottom: 0px;
-	padding-left: 2%;
-	padding-right: 2%;
-}
-
-.footerContender .footerLeft,
-.footerContender .footerCenter,
-.footerContender .footerRight{
+	padding: 90px 2% 0;
+	display: inline-block;
+	line-height: 1.8;
+	font-weight: 400;
+	text-decoration: none;
+	color: inherit;
+  }
+  
+  .footerContainer .footerLeft,
+  .footerContainer .footerCenter,
+  .footerContainer .footerRight {
 	display: inline-block;
 	vertical-align: top;
-}
-
-/* Footer left */
-
-.footerContender .footerLeft{
+  }
+  
+  .footerContainer .footerLeft {
 	width: 44%;
-}
-
-/* The company logo */
-
-.footerContender h3{
-	color:  #ffffff;
+  }
+  
+  .footerContainer h3 {
+	color: #ffffff;
 	font-family: "ProximaNova-Light";
 	margin: 0;
-}
-
-#map
-{
-  position: relative;
-
-margin-top: -15px;
-  width: 260px;
-  height: auto;
- 
-}
-
-/* Footer links */
-.footerLinks 
-{
+  }
+  
+  #map {
 	position: relative;
-	top:-70px;
-}
-.footerContender .footerLinks{
-	color:  #ffffff;
+	margin-top: 0px ; 
+	width: 260px;
+	height: auto;
+  }
+  
+  .footerText {
+	position: relative;
+	top: -70px;
+	color: #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
-}
-
-.footerContender{
-	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
-	text-decoration: none;
-	color:  inherit;
-}
-
-.footerContender .footer-company-name{
-	color:  #222;
+  }
+  
+  .footer-company-name {
+	color: #222;
 	font-size: 17px;
 	font-weight: normal;
 	margin: 0;
-}
-
-/* Footer Center */
-
-.footerContender .footerCenter{
+  }
+  
+  .footerContainer .footerCenter {
 	width: 34%;
-}
-
-.footerContender .footerCenter i{
-	background-color:  #000000;
+  }
+  
+  .footerContainer .footerCenter i,
+  .footerRight i {
+	background-color: #000000;
 	color: #ffffff;
 	font-size: 40px;
 	width: 48px;
@@ -101,200 +66,126 @@ margin-top: -15px;
 	line-height: 50px;
 	margin: 10px 15px;
 	vertical-align: middle;
-
-}
-.footerRight 
-{
- margin-top: -40px ;
-}
-.footerRight i{
-	background-color:  #000000;
-	border-radius: 50%;
-	margin: 10px 15px;
-	margin-top: 28px;
-	
-	vertical-align: middle;
-	color: #ffffff;
-	font-size: 40px;
-	width: 48px;
-	height: 48px;
-	text-align: center;
-	
-}
-
-.footerRight p{
+  }
+  
+  .footerRight {
+	margin-top: -40px;
+  }
+  
+  .footerRight p,
+  .footerContainer .footerCenter p {
 	display: inline-block;
 	color: #ffffff;
-  font-weight:400;
+	font-weight: 400;
 	vertical-align: middle;
-	margin:0;
-	margin-top: 13px;
-		font-family: "ProximaNova-Light";
-		font-size: 17px;
-}
-
-.footerContender .footerCenter, .footerRight i{
-
-	line-height: 47px;
-
-
-}
-
-.footerContender .footerCenter p{
-	display: inline-block;
-	color: #ffffff;
-  font-weight:400;
-	vertical-align: middle;
-	margin:0;
-}
-
-
-
-.footerContender .footerCenter p span{
-	display:block;
-	font-weight: normal;
-	font-size:17px;
-	line-height:2;
-
-}
-
-.footerContender .footerCenter p a{
-	color:  rgb(205, 205, 205);
-	text-decoration: none;;
-}
-
-.footerContender .footerLinks a:before {
-  content: "|";
-  font-weight:300;
-  font-size: 20px;
-  left: 0;
-  color: #fff;
-  display: inline-block;
-  padding-right: 5px;
-}
-
-.footerContender .footerLinks .link-1:before {
-  content: none;
-}
-
-/* Footer Right */
-
-.footerContender .footerRight{
-	width: 20%;
-}
-
-
-
-.footerContender .footerCompanyAbout{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 17px;
-	font-weight: normal;
 	margin: 0;
-}
-
-.footerContender .footerCompanyAbout, .footerLeft span{
+	font-family: "ProximaNova-Light";
+	font-size: 17px;
+  }
+  
+  .footerContainer .footerCenter p span {
 	display: block;
-	color:  #ffffff;
+	font-weight: normal;
+	font-size: 17px;
+	line-height: 2;
+  }
+  
+  .footerContainer .footerCenter p a {
+	color: rgb(205, 205, 205);
+	text-decoration: none;
+  }
+  
+  .footerText a:before {
+	content: "|";
+	font-weight: 300;
+	font-size: 20px;
+	color: #fff;
+	padding-right: 5px;
+  }
+  
+  .footerText .link-1:before {
+	content: none;
+  }
+  
+  .footerRight {
+	width: 20%;
+  }
+  
+  .footerMap,
+  .footerLeft span {
+	display: block;
+	color: #ffffff;
 	font-size: 17px;
 	font-weight: bold;
 	margin-bottom: 20px;
-}
-
-.footerContender .footer-icons{
+  }
+  
+  .footer-icons {
 	margin-top: 25px;
-}
-
-
-
-.footerContender .footer-icons a{
+  }
+  
+  .footer-icons a {
 	display: inline-block;
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color:  #33383b;
+	background-color: #33383b;
 	border-radius: 2px;
-
 	font-size: 20px;
 	color: #ffffff;
 	text-align: center;
 	line-height: 35px;
-
 	margin-right: 3px;
 	margin-bottom: 5px;
-}
-
-.footerlogoEM
-{
+  }
   
-  max-width: 270px;
-  max-height: 270px;
-}
-
-#map
-{
-  position: relative;
-display: flex;
-border-radius: 5%;
-  width: 160px;
-  height: 80px;
- 
-}
-
-
-@media (max-width: 880px) {
-
-	 .fa-envelope
-	{
-	left: 1.1%;
-	position: relative;
-	
+  .footerlogoEM {
+	max-width: 270px;
+	max-height: 270px;
+  }
+  
+  @media (max-width: 880px) {
+	.fa-envelope {
+	  left: 1.1%;
+	  position: relative;
 	}
-
-	.fa-map-marker
-	{
-		left: 0.5%;
-		position: relative;
+  
+	.fa-map-marker {
+	  left: 0.5%;
+	  position: relative;
 	}
-
-
-
-	.footerContender{
-		margin-top: -100px;
+  
+	.footerContainer {
+	  margin-top: -100px;
 	}
-	.footerCenter
-	{
-		margin-top: -60px;
+  
+	.footerCenter {
+	  margin-top: -60px;
 	}
-	
-	.footerContender .footerLeft,
-	.footerContender .footerCenter,
-	.footerContender .footerRight{
-		display: block;
-		width: 100%; 
-		
-		margin-bottom: 10px;
-		text-align: center;
-		
+  
+	.footerContainer .footerLeft,
+	.footerContainer .footerCenter,
+	.footerContainer .footerRight {
+	  display: block;
+	  width: 100%;
+	  margin-bottom: 10px;
+	  text-align: center;
 	}
-
-	.footerContender .footerCenter i{
-		margin-left: 0;
+  
+	.footerContainer .footerCenter i {
+	  margin-left: 0;
 	}
-	#map
-	{
-transform: translateX(-50%);
-left: 50%;
-margin-top: 10px;
-	 
+  
+	#map {
+	  transform: translateX(-50%);
+	  left: 50%;
+	  margin-top: 10px;
 	}
-}
-@media (max-width: 600px) {
-	.footerContender{
-		margin-top: -235px;
+  }
+  
+  @media (max-width: 600px) {
+	.footerContainer {
+	  margin-top: -200px;
 	}
-}
-
-
-
-
+  }
+  

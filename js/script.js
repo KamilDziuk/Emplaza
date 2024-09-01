@@ -34,16 +34,25 @@ let header = document.querySelector("header");
 
 header.addEventListener("mousemove", (e) => {
 
-let x = e.clientX;
-let y = e.clientY;
+let x = e.clientX / 250;
+let y = e.clientY / 300;
 
 
 
-header.style.transformOrigin =  `${x}px ${y}px`;
-header.style.transform = "scale(1.010)";
+
+header.style.transform = "translateX("+ x + "px)   translateY("+ y + "px)"
 })
 
 
+header.addEventListener("mouseleave", (e) => {
+
+    
+ 
+    header.style.transform = "translateX("+ 0 + "px)   translateY("+ 0 + "px)"
+    header.style.transition = "transform 0.5s ease, opacity 0.3s ease";
+    })
+    
+    
 
 const panoramas = [
     {id: 'image0', file: 'image/image360One.webp', autoLoad: true},

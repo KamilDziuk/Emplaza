@@ -73,7 +73,7 @@ top: 20%;
 
 
 
-.test3D
+.footer3DLogo
 {
 
 
@@ -94,8 +94,8 @@ rotateX(var(--rotateX))
 
 
 
-.test3D::before,
-.test3D::after
+.footer3DLogo::before,
+.footer3DLogo::after
 {
 
     content: "";
@@ -107,7 +107,7 @@ rotateX(var(--rotateX))
 /* gradient thingy */
 
 
-.test3D::after
+.footer3DLogo::after
 {
 position: absolute;
     inset: -1px;
@@ -122,10 +122,10 @@ top: 40%;
 
 @media (max-width: 880px) 
     {
-        .test3D{
+        .footer3DLogo{
         margin-top: 10px;
         }
-        .test3D::after
+        .footer3DLogo::after
         {
             background: rgba(0, 0, 0, 0);
         

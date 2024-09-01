@@ -17,7 +17,7 @@ arrowRight.style.cursor = "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.
 imagesMove = (e) =>
 {
 image.forEach(element => {
-let x = e.clientX / 170 ;
+let x = e.clientX / 170;
 let y = e.clientY / 70;
 element.style.transform = "translateX("+ x + "px) translateY("+ y + "px)";
 });
@@ -34,7 +34,7 @@ let textNumber = 0;
 function textSliderFunction(index)
 {
 text.forEach((textElement,i) => {
-textElement.style.transform = `translateY(${(i-index) *100}%)`;
+textElement.style.transform = `translateY(${(i-index) *89}%)`;
 });
 };
 

@@ -28,30 +28,30 @@ element.style.setProperty("--rotateY",offsetY + "deg");
 
 
 
-// const footerlogoEM = document.querySelector(".test3D");
+const footer3DLogo = document.querySelector(".footer3DLogo");
 
 
-// document.addEventListener("mousemove", (e) => {
-//     rotateElement(e, footerlogoEM)
-// });
+document.addEventListener("mousemove", (e) => {
+    rotateElement(e, footer3DLogo)
+});
 
-// function rotateElement(event, element)
-// {
-// //get mouse position
-// const x = event.clientY;
-// const y = event.clientX;
+function rotateElement(event, element)
+{
+//get mouse position
+const x = event.clientY;
+const y = event.clientX;
 
-// // find the middle
-// const middleX = window.innerWidth / 2;
-// const middleY = window.innerHeight / 2;
+// find the middle
+const middleX = window.innerWidth / 2;
+const middleY = window.innerHeight / 2;
 
 
 
-// //get offset form middle
-// const offsetX = ((x - middleX) / middleX ) * 20;
-// const offsetY = ((y - middleY) / middleY )* 20;
+//get offset form middle
+const offsetX = ((x - middleX) / middleX ) * 5;
+const offsetY = ((y - middleY) / middleY )* 5;
 
-// element.style.setProperty("--rotateX", -1 * offsetX + "deg");
-// element.style.setProperty("--rotateY",offsetY + "deg");
+element.style.setProperty("--rotateX", -1 * offsetX + "deg");
+element.style.setProperty("--rotateY",offsetY + "deg");
 
-// };
+};
