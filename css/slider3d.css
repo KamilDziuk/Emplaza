@@ -106,12 +106,13 @@ transition: transform 3s ease, opacity 0.3s ease;
 
 
     color: #ffffff;
-    background-color: #ffffff73;
+    background: #ffffff73;
     font-size: 40px;
     font-weight: 600;
  padding-left: 2%;
  padding-right: 2%;
- padding-bottom: 3%;
+
+
 
     animation: mainFadeIn 2s forwards;
     animation-delay: 1.6s;
@@ -183,13 +184,13 @@ transition: transform 3s ease, opacity 0.3s ease;
     .mainSlideContender .contenderTitle {
       margin-top: 10px;
       height: 20px;
-
+      width: 100%;
     }
  
     .mainSlideContender .contenderTitle .titleBox .text {
 
 
-  
+ 
 
       font-size: 20px;
   
@@ -198,7 +199,7 @@ transition: transform 3s ease, opacity 0.3s ease;
     }
     .mainSlider
     {
-      top: 0px;
+      top: -2px;
     height: 500px;
 
     
