@@ -4,7 +4,7 @@
   position: relative;
 width:100%;
 width:100%;
-
+margin-bottom: 20px;
 
 }
 .contenderImagesBackgrounds
@@ -41,7 +41,7 @@ transform: translateX(-50%);
 .contenterGallery
 { 
 
-width: 60%;
+width: 80%;
 position: relative;
 left: 50%;
 transform: translateX(-50%);
@@ -53,7 +53,7 @@ transform: translateX(-50%);
   top: 20px;
 position: relative;
 width: 100%;
-height: 700px;
+height: 750px;
 display: flex;
 overflow: hidden;
 
@@ -66,7 +66,7 @@ overflow: hidden;
 {
 position: absolute;
 width:100%;
-height: 700px;
+height: 750px;
 display: flex;
 
 transition: transform 3s ease, opacity 0.3s ease;
@@ -75,43 +75,51 @@ transition: transform 3s ease, opacity 0.3s ease;
 
 
 
-.mainSlideContender .contenderTitle {
-  position: absolute;
 
-  width:50%;
-  height: 30px;
 
-  overflow: hidden;
-}
-.mainSlideContender .contenderTitle .titleBox {
-  width: 100%;
-  position: relative;
-  align-items: center;
-  
- z-index: 999;
-}
-.mainSlideContender .contenderTitle .titleBox .block {
-  width: 0%;
-  height: inherit;
-  background: #000000d0;
-  position: absolute;
-  animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-  display: flex;
+
+
+  .mainSlideContender .contenderTitle {
+    position: absolute;
  
-}
-.mainSlideContender .contenderTitle .titleBox .text {
+    width: 50%;
+    height: 40px;
+    margin-top: 30px;
+    z-index: 999;
+    overflow: hidden;
+  }
+  .mainSlideContender .contenderTitle .titleBox {
+    width: 100%;
+    position: relative;
+    height: 50px;
+  }
+  .mainSlideContender .contenderTitle .titleBox .block {
 
-  color: #ffffff;
-  font-size: 32px;
-  animation: mainFadeIn 0.5s forwards;
-  animation-delay: 0.5s;
-  opacity: 0;
-  display: flex;
-  align-items: baseline;
-  position: relative;
- 
-}
+    width: 0%;
+    height: inherit;
+    background: #000000;
+    position: absolute;
+    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+    display: flex;
+  }
+  .mainSlideContender .contenderTitle .titleBox .text {
 
+
+    color: #ffffff;
+    background-color: #ffffff73;
+    font-size: 40px;
+    font-weight: 600;
+ padding-left: 2%;
+ padding-right: 2%;
+ padding-bottom: 3%;
+
+    animation: mainFadeIn 2s forwards;
+    animation-delay: 1.6s;
+    opacity: 0;
+    display: flex;
+    align-items: baseline;
+    position: relative;
+  }
 
 
 
@@ -139,7 +147,7 @@ transition: transform 3s ease, opacity 0.3s ease;
 
   }
   .arrow {
-    width: 500px;
+    width: 100%;
     height:500px;
    
 
@@ -167,4 +175,97 @@ transition: transform 3s ease, opacity 0.3s ease;
     100% {
       opacity: 1;
     }
+  }
+
+
+
+  @media(max-width:900px){
+    .mainSlideContender .contenderTitle {
+      margin-top: 10px;
+      height: 20px;
+
+    }
+ 
+    .mainSlideContender .contenderTitle .titleBox .text {
+
+
+  
+
+      font-size: 20px;
+  
+  
+  
+    }
+    .mainSlider
+    {
+      top: 0px;
+    height: 500px;
+
+    
+    }
+    
+    
+    
+    
+    .contendeImages
+    {
+
+    height: 500px;
+  
+
+    }
+    .image
+{
+
+
+
+
+  height: 500px;
+
+  
+
+
+  }
+
+  .contenterGallery
+  { 
+  
+  width: 100%;
+
+  
+  }
+  
+    
+  }
+
+  @media(max-width:600px){
+
+    .contendeImages
+    {
+      margin-top: 0px;
+      height: 350px;
+  
+
+    }
+    .image
+{
+
+
+
+
+  height: 350px;
+
+  margin-top: 0px;
+
+
+  }
+
+  .mainSlider
+  {
+
+    height: 350px;
+    margin-top: 0px;
+  
+  }
+  
   }

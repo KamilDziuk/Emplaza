@@ -113,7 +113,7 @@ position: absolute;
     inset: -1px;
      background: rgba(0, 0, 0, 0.742);
      transform: translateZ(-50px);
-width: 260px;
+width: 40%;
 height: 30%;
 border-radius: 5%;
 top: 40%;
@@ -123,7 +123,7 @@ top: 40%;
 @media (max-width: 880px) 
     {
         .footer3DLogo{
-        margin-top: 10px;
+        margin-top: 20px;
         }
         .footer3DLogo::after
         {

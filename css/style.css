@@ -163,7 +163,7 @@ header {
 {
 position: relative;
 
-width:550px!important;
+width:50%;
 height: auto !important;
 }
 
@@ -409,7 +409,7 @@ margin-bottom: 1%;
   padding: 0 50px;
 }
 .add-flex div:last-child {
-  min-width: 400px;
+  min-width: 100%;
   margin: 50px;
 }
 
@@ -970,7 +970,7 @@ left: 0;
   {
     left:25%;
     position: relative;
-    width: 650px;
+    width: 100%;
 
     height: 500px;
     border-radius: 5%;
@@ -1101,7 +1101,7 @@ padding: 2%;
   {
   
   
-    width: 200px!important;
+    width: 100%!important;
     height: auto !important;
   
   }
@@ -1257,7 +1257,7 @@ nav div ul .active {
   padding: 0 50px;
 }
 .add-flex div:last-child {
-  min-width: 400px;
+  min-width: 100%;
   margin: 50px;
 }
 

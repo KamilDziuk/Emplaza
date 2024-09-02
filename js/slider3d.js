@@ -34,7 +34,7 @@ let textNumber = 0;
 function textSliderFunction(index)
 {
 text.forEach((textElement,i) => {
-textElement.style.transform = `translateY(${(i-index) *89}%)`;
+textElement.style.transform = `translateY(${(i-index) *100}%)`;
 });
 };
 
@@ -80,6 +80,7 @@ left.addEventListener("click", () => {
        text.style.animation = 'none';
        void text.offsetWidth;
        text.style.animation = '';
+       text.style.position ="absolute";
    });
 
   
@@ -107,7 +108,34 @@ right.addEventListener("click", () => {
        text.style.animation = 'none';
        void text.offsetWidth;
        text.style.animation = '';
+          text.style.position ="absolute";
    });
 
 });
 
+setInterval(() =>
+{
+    mainNumbers = (mainNumbers < image.length -1) ?  mainNumbers  + 1: 0;
+   backgroundNumbers = (backgroundNumbers < imageBackgrounds.length -1) ?  backgroundNumbers + 1: 0;
+   textNumber = (textNumber < text.length -1) ?  textNumber + 1: 0;
+   mainSliderFunction(mainNumbers);
+   backgroundSliderFunction(backgroundNumbers);
+   textSliderFunction(textNumber);
+   
+   let contenderTitle = document.querySelector('.contenderTitle .block');
+   let texts = document.querySelectorAll('.contenderTitle .text');
+
+   
+   contenderTitle.style.animation = 'none';
+   void contenderTitle.offsetWidth;
+   contenderTitle.style.animation = '';
+
+  
+   texts.forEach((text) => {
+       text.style.animation = 'none';
+       void text.offsetWidth;
+       text.style.animation = '';
+          text.style.position ="absolute";
+   });
+
+},5000)
