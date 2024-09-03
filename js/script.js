@@ -12,7 +12,7 @@ let galleryItem=document.querySelectorAll(".menuImage");
 numbers = 0;
 function gallery(e){
     galleryItem.forEach((r,l)=>{
-        r.style.transform =`translateX(${(l-e)*102}%)`;
+        r.style.transform =`translateX(${(l-e)*100}%)`;
     
     
     
@@ -84,7 +84,10 @@ panoramas.forEach(panorama => {
 let test = document.querySelectorAll(".pnlm-load-button");
 
 test.forEach(element => {
-    element.innerHTML = ` Kliknij aby zobaczyć interaktywne wizualizacje 360°`
+    element.innerHTML = ` Kliknij aby zobaczyć interaktywne wizualizacje 360°`;
+ element.style.fontFamily  = "ProximaNova-Light";
+
+
 });
 
 

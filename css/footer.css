@@ -2,13 +2,17 @@
 	background: linear-gradient(-90deg, #000000 0%, #00000000 0%, #000000b9 120%);
 	box-sizing: border-box;
 	width: 100%;
+	margin-bottom: -10%;
 	text-align: left;
 	padding: 90px 2% 0;
 	display: inline-block;
 	line-height: 1.8;
 	font-weight: 400;
 	text-decoration: none;
-	color: inherit;
+	font-family: "ProximaNova-Light" !important;
+	
+
+
   }
   
   .footerContainer .footerLeft,
@@ -24,14 +28,14 @@
   
   .footerContainer h3 {
 	color: #ffffff;
-	font-family: "ProximaNova-Light";
+	font-family: "ProximaNova-Light" !important;
 	margin: 0;
   }
   
   #map {
 	position: relative;
 	margin-top: 0px ; 
-	width: 260px;
+	width: 100%;
 	height: auto;
   }
   
@@ -41,6 +45,7 @@
 	color: #ffffff;
 	margin: 20px 0 12px;
 	padding: 0;
+	font-family: "ProximaNova-Light" !important;
   }
   
   .footer-company-name {
@@ -79,7 +84,7 @@
 	font-weight: 400;
 	vertical-align: middle;
 	margin: 0;
-	font-family: "ProximaNova-Light";
+	font-family: "ProximaNova-Light" !important;
 	font-size: 17px;
   }
   
@@ -140,7 +145,7 @@
   }
   
   .footerlogoEM {
-	max-width: 270px;
+	max-width: 40%;
 	max-height: 270px;
   }
   
@@ -156,7 +161,8 @@
 	}
   
 	.footerContainer {
-	  margin-top: -100px;
+		margin-top: -150px;
+	 
 	}
   
 	.footerCenter {
@@ -185,8 +191,23 @@
   }
   
   @media (max-width: 600px) {
+
+	.footerlogoEM {
+		max-width: 60%;
+	padding-bottom:0% ;
+	  }
 	.footerContainer {
-	  margin-top: -200px;
+		margin-top: -150px;
+	}
+  }
+  @media (max-width: 460px) {
+
+	.footerlogoEM {
+		max-width: 80%;
+	padding-bottom:5% ;
+	  }
+	.footerContainer {
+		margin-top: -140px;
 	}
   }
   

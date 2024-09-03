@@ -48,8 +48,8 @@ const middleY = window.innerHeight / 2;
 
 
 //get offset form middle
-const offsetX = ((x - middleX) / middleX ) * 5;
-const offsetY = ((y - middleY) / middleY )* 5;
+const offsetX = ((x - middleX) / middleX ) * 10;
+const offsetY = ((y - middleY) / middleY )* 10;
 
 element.style.setProperty("--rotateX", -1 * offsetX + "deg");
 element.style.setProperty("--rotateY",offsetY + "deg");

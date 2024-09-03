@@ -23,9 +23,20 @@ element.style.transform = "translateX("+ x + "px) translateY("+ y + "px)";
 });
 }
 
+
+// mouseLeave = () =>
+//    {
+//    image.forEach(elementl => {
+//       elementl.style.transform = "translateX("+ 0 + "px)   translateY("+ 0 + "px)"
+
+    
+//    });
+//    }
+
 arrowLeft.addEventListener("mousemove",imagesMove);
 arrowRight.addEventListener("mousemove",imagesMove);
-
+// arrowLeft.addEventListener("mouseleave",mouseLeave);
+// arrowRight.addEventListener("mouseleave",mouseLeave);
 
 
 let backgroundNumbers = 0;
@@ -59,83 +70,109 @@ elementBackgrounds.style.transform = `translateX(${(d-index2) *100}%)`;
 let left = document.querySelector(".leftbs");
 let right = document.querySelector(".rightbs");
 
+let leftMobile = document.querySelector(".leftMobile");
+let rightMobile = document.querySelector(".rightMobile");
 
-left.addEventListener("click", () => {
+
+muvingBlockLeft = () => 
+{
    backgroundNumbers = (backgroundNumbers > 0) ? backgroundNumbers - 1 : imageBackgrounds.length - 1;
    mainNumbers = (mainNumbers > 0) ? mainNumbers - 1 : image.length - 1;
    textNumber = (textNumber > 0) ? textNumber - 1 : text.length - 1;
    mainSliderFunction(mainNumbers);
    textSliderFunction(textNumber);
    backgroundSliderFunction(backgroundNumbers);
-   let contenderTitle = document.querySelector('.contenderTitle .block');
-   let texts = document.querySelectorAll('.contenderTitle .text');
+}
 
+muvingBlockRight = () => 
+   {
+      mainNumbers = (mainNumbers < image.length -1) ?  mainNumbers  + 1: 0;
+      backgroundNumbers = (backgroundNumbers < imageBackgrounds.length -1) ?  backgroundNumbers + 1: 0;
+      textNumber = (textNumber < text.length -1) ?  textNumber + 1: 0;
+      mainSliderFunction(mainNumbers);
+      backgroundSliderFunction(backgroundNumbers);
+      textSliderFunction(textNumber);
+      
+   }
    
-   contenderTitle.style.animation = 'none';
-   void contenderTitle.offsetWidth;
-   contenderTitle.style.animation = '';
 
-  
-   texts.forEach((text) => {
-       text.style.animation = 'none';
-       void text.offsetWidth;
-       text.style.animation = '';
-       text.style.position ="absolute";
-   });
+   textAnimation = () =>
+   {
+      let contenderTitle = document.querySelector('.contenderTitle .block');
+      let texts = document.querySelectorAll('.contenderTitle .text');
+   
+      
+      contenderTitle.style.animation = 'none';
+      void contenderTitle.offsetWidth;
+      contenderTitle.style.animation = '';
+   
+     
+      texts.forEach((text) => {
+          text.style.animation = 'none';
+          void text.offsetWidth;
+          text.style.animation = '';
+          text.style.position ="absolute";
+      });
+   }
 
+
+leftMobile.addEventListener("click", () => {
+
+
+   muvingBlockLeft();
+   textAnimation();
   
-  
+});
+
+rightMobile.addEventListener("click", () => {
+
+   muvingBlockRight();
+   textAnimation();
+
+});
+
+left.addEventListener("click", () => {
+ 
+   muvingBlockLeft();
+   textAnimation();
 });
 
 right.addEventListener("click", () => {
-   mainNumbers = (mainNumbers < image.length -1) ?  mainNumbers  + 1: 0;
-   backgroundNumbers = (backgroundNumbers < imageBackgrounds.length -1) ?  backgroundNumbers + 1: 0;
-   textNumber = (textNumber < text.length -1) ?  textNumber + 1: 0;
-   mainSliderFunction(mainNumbers);
-   backgroundSliderFunction(backgroundNumbers);
-   textSliderFunction(textNumber);
-   
-   let contenderTitle = document.querySelector('.contenderTitle .block');
-   let texts = document.querySelectorAll('.contenderTitle .text');
-
-   
-   contenderTitle.style.animation = 'none';
-   void contenderTitle.offsetWidth;
-   contenderTitle.style.animation = '';
-
-  
-   texts.forEach((text) => {
-       text.style.animation = 'none';
-       void text.offsetWidth;
-       text.style.animation = '';
-          text.style.position ="absolute";
-   });
+   muvingBlockRight();
+   textAnimation();
 
 });
 
-setInterval(() =>
+ const next =  setInterval(() =>
 {
-    mainNumbers = (mainNumbers < image.length -1) ?  mainNumbers  + 1: 0;
-   backgroundNumbers = (backgroundNumbers < imageBackgrounds.length -1) ?  backgroundNumbers + 1: 0;
-   textNumber = (textNumber < text.length -1) ?  textNumber + 1: 0;
-   mainSliderFunction(mainNumbers);
-   backgroundSliderFunction(backgroundNumbers);
-   textSliderFunction(textNumber);
-   
-   let contenderTitle = document.querySelector('.contenderTitle .block');
-   let texts = document.querySelectorAll('.contenderTitle .text');
-
-   
-   contenderTitle.style.animation = 'none';
-   void contenderTitle.offsetWidth;
-   contenderTitle.style.animation = '';
-
+   muvingBlockRight();
+   textAnimation();
   
-   texts.forEach((text) => {
-       text.style.animation = 'none';
-       void text.offsetWidth;
-       text.style.animation = '';
-          text.style.position ="absolute";
-   });
-
 },5000)
+
+
+right.addEventListener("mousemove", () => {
+   
+   clearInterval(next);
+
+})
+
+
+
+left.addEventListener("mousemove", () => {
+   clearInterval(next);
+
+})
+
+rightMobile.addEventListener("mousemove", () => {
+   
+   clearInterval(next);
+
+})
+
+
+
+leftMobile.addEventListener("mousemove", () => {
+   clearInterval(next);
+
+})
