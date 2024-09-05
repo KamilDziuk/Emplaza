@@ -34,8 +34,8 @@ let header = document.querySelector("header");
 
 header.addEventListener("mousemove", (e) => {
 
-let x = e.clientX / 250;
-let y = e.clientY / 300;
+let x = e.clientX / 150;
+let y = e.clientY / 100;
 
 
 

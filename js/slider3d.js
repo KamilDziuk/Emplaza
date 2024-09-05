@@ -35,8 +35,8 @@ element.style.transform = "translateX("+ x + "px) translateY("+ y + "px)";
 
 arrowLeft.addEventListener("mousemove",imagesMove);
 arrowRight.addEventListener("mousemove",imagesMove);
-// arrowLeft.addEventListener("mouseleave",mouseLeave);
-// arrowRight.addEventListener("mouseleave",mouseLeave);
+
+
 
 
 let backgroundNumbers = 0;
@@ -176,3 +176,5 @@ leftMobile.addEventListener("mousemove", () => {
    clearInterval(next);
 
 })
+
+
