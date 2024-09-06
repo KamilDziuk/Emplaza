@@ -1,135 +1,73 @@
-
-
 .header3D
 {
-
-
-font-size: 3rem;
-font-weight: bold;
-background: hsla(221, 44%, 7%, 0);
-padding: 2rem;
-overflow: hidden;
-position: relative;
-transform-style: preserve-3d;
-transform: 
-perspective(5000px)
-
-rotateY(var(--rotateY))
-rotateX(var(--rotateX))
-
+	font-size:3rem;
+	font-weight:700;
+	background:hsla(221,44%,7%,0);
+	padding:2rem;
+	overflow:hidden;
+	position:relative;
+	transform-style:preserve-3d;
+	transform:perspective(5000px) rotateY(var(--rotateY)) rotateX(var(--rotateX))
 }
 
+.header3D::before,.header3D::after
+{
+	content:"";
+	position:absolute;
+	border-radius:inherit
+}
 
-
-.header3D::before,
 .header3D::after
 {
-    content: "";
-    position: absolute;
-    border-radius: inherit;
+	background:#000;
+	transform:translateZ(-50px)
 }
 
-
-/* gradient thingy */
-.header3D::after
-{
-    
-     background: rgb(0, 0, 0);
-     transform: translateZ(-50px);
-     /* backdrop-filter : blur(6px); */
+@media(max-width:600px) {
+	.header3D
+	{
+		top:20%
+	}
 }
-
-/* .header3D::before
-{
-    inset: 0.75rem;
-    background: rgba(0, 0, 0, 0.465);
-     transform: translateZ(120px);
-     filter: blur(15px);
-     opacity: 0.5;
-
-} */
-@media(max-width:600px){
-    .header3D
-    {
-top: 20%;
-    }    
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .footer3DLogo
 {
-
-
-margin-top: -10px;
-font-weight: bold;
-background: hsla(221, 44%, 7%, 0);
-padding: 1px;
-
-position: relative;
-transform-style: preserve-3d;
-transform: 
-perspective(5000px)
-
-rotateY(var(--rotateY))
-rotateX(var(--rotateX))
-
+	margin-top:-10px;
+	font-weight:700;
+	background:hsla(221,44%,7%,0);
+	padding:1px;
+	position:relative;
+	transform-style:preserve-3d;
+	transform:perspective(5000px) rotateY(var(--rotateY)) rotateX(var(--rotateX))
 }
 
-
-
-.footer3DLogo::before,
-.footer3DLogo::after
+.footer3DLogo::before,.footer3DLogo::after
 {
-
-    content: "";
-    position: absolute;
-    border-radius: inherit;
+	content:"";
+	position:absolute;
+	border-radius:inherit
 }
-
-
-/* gradient thingy */
-
 
 .footer3DLogo::after
 {
-position: absolute;
-    inset: -1px;
-     background: rgba(0, 0, 0, 0.742);
-     transform: translateZ(-50px);
-width: 40%;
-height: 30%;
-border-radius: 5%;
-top: 40%;
-
+	position:absolute;
+	inset:-1px;
+	background:#000000bd;
+	transform:translateZ(-50px);
+	width:40%;
+	height:30%;
+	border-radius:5%;
+	top:40%
 }
 
+@media (max-width: 880px) {
+	.footer3DLogo
+	{
+		margin-top:20px
+	}
 
-@media (max-width: 880px) 
-    {
-        .footer3DLogo{
-        margin-top: 20px;
-        }
-        .footer3DLogo::after
-        {
-            background: rgba(0, 0, 0, 0);
-        
-        }    
-
-    }
+	.footer3DLogo::after
+	{
+		background:#0000
+	}
+}
