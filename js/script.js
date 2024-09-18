@@ -99,9 +99,3 @@ image0.forEach(element1 => {
 
 
 
-
-// let test9 = document.querySelectorAll(".");
-
-// test9.forEach(er => {
-//     er.style.display = "none";
-// });

@@ -43,6 +43,7 @@
   height:750px;
   display:flex;
   overflow:hidden
+  
   }
   
   .contendeImages {
@@ -100,12 +101,13 @@
   display:flex;
   width:100%;
   height:100%;
-  position:absolute
+  position:absolute;
+  border: none;
   }
   
   .arrow {
   width:100%;
-  height:100%
+  height:100%;
   }
   
   .arrow--left,.arrow--right {
@@ -195,10 +197,13 @@
   }
   
   .leftMobile,.rightMobile {
-  display:block
+  display:block;
+
   }
   
   #arrowMobile {
+ 
+
   z-index:999
   }
   
@@ -211,7 +216,7 @@
   }
   
   .backgroundsFilter {
-  background-color:#000
+  background-color:#00000026
   }
   }
   

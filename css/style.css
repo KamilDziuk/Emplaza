@@ -10,8 +10,11 @@
 *
 {
 	margin:0;
-	padding:0
+	padding:0;
+	
 }
+
+
 
 body
 {
@@ -19,6 +22,7 @@ body
 	background:#343434;
 	color:#fff;
 	z-index:94;
+
 	overflow-x:hidden
 }
 
@@ -41,6 +45,11 @@ body
 		opacity:1
 	}
 }
+
+
+
+
+
 
 h2
 {
